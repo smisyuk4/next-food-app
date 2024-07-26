@@ -4,7 +4,7 @@ import styles from './meals-grid.module.css';
 export default function MealsGrid({ meals }) {
   return (
     <ul className={styles.meals}>
-      {map.meals((meal) => (
+      {meals.map((meal) => (
         <li key={meal.id}>
           <MealItem {...meal} />
         </li>
