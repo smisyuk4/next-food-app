@@ -7,8 +7,8 @@ import styles from './page.module.css';
 export default function MealDetailsPage({ params }) {
   const meal = getMeal(params.slug);
 
-  if(!meal){
-    notFound()
+  if (!meal) {
+    notFound();
   }
 
   meal.instructions = meal.instructions?.replace(/\n/g, '<br/>');
@@ -17,7 +17,11 @@ export default function MealDetailsPage({ params }) {
     <>
       <header className={styles.header}>
         <div className={styles.image}>
-          <Image src={meal.image} alt={meal.summary} fill />
+          <Image
+            src={`https://sergiy-food-app-27-07-images.s3.amazonaws.com/${meal.image}`}
+            alt={meal.summary}
+            fill
+          />
         </div>
 
         <div className={styles.headerText}>
