@@ -11,3 +11,5 @@
 - [useActionState() from React](https://react.dev/reference/react/useActionState)
 - [next environment-variables](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables)
 - [next generate-metadata](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
+- [next optimizing fonts](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts)
+- [(video) Using Fonts in Next.js (Google Fonts, Local Fonts, Tailwind CSS)](https://www.youtube.com/watch?v=L8_98i_bMMA&ab_channel=leerob)
