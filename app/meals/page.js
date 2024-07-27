@@ -19,8 +19,8 @@ async function Meals() {
 
 export default function MealsPage() {
   return (
-    <>
-      <header className={styles.header}>
+    <main className={styles.main}>
+      <section className={styles.desc}>
         <h1>
           Delicious meals, created{' '}
           <span className={styles.highlight}>by you</span>
@@ -32,13 +32,11 @@ export default function MealsPage() {
             <Link href='/meals/share'>Share your favorite recipe</Link>
           </p>
         </h1>
-      </header>
+      </section>
 
-      <main className={styles.main}>
-        <Suspense fallback={<MealsLoadingPage />}>
-          <Meals />
-        </Suspense>
-      </main>
-    </>
+      <Suspense fallback={<MealsLoadingPage />}>
+        <Meals />
+      </Suspense>
+    </main>
   );
 }

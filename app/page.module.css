@@ -1,4 +1,4 @@
-.header {
+.hero {
   display: flex;
   gap: 3rem;
   margin: 3rem auto;
@@ -11,12 +11,12 @@
   height: 25rem;
 }
 
-.hero {
+.desc {
   color: #ddd6cb;
   font-size: 1.5rem;
 }
 
-.hero h1 {
+.desc h1 {
   font-size: 2rem;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;

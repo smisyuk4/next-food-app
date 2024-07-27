@@ -1,4 +1,4 @@
-.header {
+.desc {
   gap: 3rem;
   margin: 3rem auto 5rem auto;
   width: 90%;
@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.header h1 {
+.desc h1 {
   font-family: 'Montserrat', sans-serif;
 }
 
