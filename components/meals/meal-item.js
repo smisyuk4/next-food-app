@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+const { AWS_BUCKET_PATH } = process.env;
 
 import styles from './meal-item.module.css';
 
@@ -8,7 +9,11 @@ export default function MealItem({ title, slug, image, summary, creator }) {
     <article className={styles.meal}>
       <header>
         <div className={styles.image}>
-          <Image src={`https://sergiy-food-app-27-07-images.s3.amazonaws.com/${image}`} alt={title} fill />
+          <Image
+            src={`https://${AWS_BUCKET_PATH}.s3.amazonaws.com/${image}`}
+            alt={title}
+            fill
+          />
         </div>
         <div className={styles.headerText}>
           <h2>{title}</h2>
