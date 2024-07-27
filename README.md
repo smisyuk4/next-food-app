@@ -10,3 +10,4 @@
 - [npm @aws-sdk/client-s3](https://www.npmjs.com/package/@aws-sdk/client-s3)
 - [useActionState() from React](https://react.dev/reference/react/useActionState)
 - [next environment-variables](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables)
+- [next generate-metadata](https://nextjs.org/docs/app/api-reference/functions/generate-metadata)
