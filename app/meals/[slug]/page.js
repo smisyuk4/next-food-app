@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 
 import { getMeal } from '@/lib/meals';
-const { AWS_BUCKET_PATH } = process.env;
+const { VERCEL_AWS_BUCKET_PATH } = process.env;
 import styles from './page.module.css';
 
 export async function generateMetadata({ params }) {
@@ -32,7 +32,7 @@ export default function MealDetailsPage({ params }) {
       <header className={styles.header}>
         <div className={styles.image}>
           <Image
-            src={`https://${AWS_BUCKET_PATH}.s3.amazonaws.com/${meal.image}`}
+            src={`https://${VERCEL_AWS_BUCKET_PATH}.s3.amazonaws.com/${meal.image}`}
             alt={meal.summary}
             fill
           />

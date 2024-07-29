@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-const { AWS_BUCKET_PATH } = process.env;
+const { VERCEL_AWS_BUCKET_PATH } = process.env;
 
 import styles from './meal-item.module.css';
 
@@ -10,7 +10,7 @@ export default function MealItem({ title, slug, image, summary, creator }) {
       <header>
         <div className={styles.image}>
           <Image
-            src={`https://${AWS_BUCKET_PATH}.s3.amazonaws.com/${image}`}
+            src={`https://${VERCEL_AWS_BUCKET_PATH}.s3.amazonaws.com/${image}`}
             alt={title}
             fill
           />
